@@ -5,6 +5,7 @@ public class Board {
     private static Board b;
     private Piece[][] pieces = new Piece[8][8];
     private List<BoardListener> listener = new LinkedList<>();
+    private Logger log;
     private Board(){};
 
     public static Board theBoard() {
