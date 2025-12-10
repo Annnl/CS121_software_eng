@@ -1,0 +1,14 @@
+AI Use Experience:
+I used AI to teach me some functions and SQL that I don't know
+I used AI to examine my code for any suggestions
+I used AI to debug error by autograder.
+
+Advantages:
+1. It helps me write SQL in java.
+
+2. Find the program of multiple instance of connections.
+
+Disadvantages:
+1. AI suggests to use private Factory method to create the instance of HTML
+    internally by View methods, but the provided test cases need an access to
+    the constructor.

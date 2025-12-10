@@ -1,0 +1,5 @@
+I used AI to build an extension of Simulation front-end by Java Swing Visualizer.
+It successfully build the code part. However, it do not understand my jar files
+and environment from the previous simulation system. 
+It spends some time to rewrite sh file to build compiled code and run the visualizer.
+In the first try, it does not include passengers' position on the board.

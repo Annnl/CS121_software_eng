@@ -1,0 +1,34 @@
+I asked AI to create a graphical front-end that animates MBTA simulation logs. 
+The visualizer displays:
+- All train lines with their stations in a color-coded layout
+- Real-time positions of trains on each line
+- Passengers waiting at stations or riding on trains
+- Step-by-step playback of simulation events
+- Playback controls (play, pause, step, reset, speed adjustment)
+
+FEATURES:
+---------
+1. Load any simulation configuration (JSON)
+2. Load any simulation log file (log.json)
+3. Visual representation with color-coded train lines:
+   - Red Line: #DA291C
+   - Orange Line: #ED8B00
+   - Green Line: #00843D
+   - Blue Line: #003DA5
+4. Animated playback with adjustable speed (100ms - 2000ms per step)
+5. Manual step-through for detailed inspection
+6. Real-time event display showing current action
+7. Progress indicator showing current step / total steps
+8. The playback controls:
+   - Play/Pause: Auto-play through the simulation
+   - Step Forward/Backward: Manual control
+   - Reset: Return to initial state
+   - Speed slider: Adjust playback speed
+
+Run the extension above by the following commands on bash:
+./build
+./sim sample.json(replace by your config file)
+./build-visualizer 
+./visualize
+Then choose sample.json (load Config) and log.json (load Log) 
+from your local disk and click play.

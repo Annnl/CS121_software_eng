@@ -1,0 +1,19 @@
+Using AI experience in part 2:
+Advantages:
+    AI helped me understand how to extract multiple sub-annotations with
+    combination parameter types.
+
+    AI warpped part of my code by helper functions to reduce code reuse and 
+    make it more structured.
+
+    AI helped me look for what is missing, like lack of robustness.
+
+
+Disadvantages:
+    AI suggested to replace getConstructor() by getDeclaredConstructor(),
+    and replace getMethods() by getDeclaredMethods(), but it makes no difference
+    on this project, since the project assumes all methods are public.
+
+    AI usually used more relevant SubClass of uncatched exception, with output
+    message to demonstrate how the exception happens, but it is not required by
+    autograder of this project.

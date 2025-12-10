@@ -1,0 +1,10 @@
+1. I am using a thread for each line train and each passenger,
+2. I am adding ReentrantLock lock for each station to aviod data race,
+    as, at most one train can be at one station. Saved in a private field
+    of MBTA class. Thus MBTA methods are signed with synchronized.
+3. When trying to move to the next station, a train is locked firstly, and wait
+    if there is already another train at the next station. After the next
+    station is available, the train move to it and write the movement into log.
+    Then the lock is released and let the train stay at the new station for 10ms.
+    Since there is no bounded limit for passenger, passengers only need to wait
+    if no target train or deboarding destination station is available.
